@@ -24,16 +24,19 @@ https://laravel.com/docs/6.x/installation
 
 4. Crear modelo y migración "Producto"
 
-    php artisan make:model Product -m
-    https://laravel.com/docs/6.x/eloquent
+php artisan make:model Product -m
+https://laravel.com/docs/6.x/eloquent
 
 5. Editar migración
+
 https://laravel.com/docs/6.x/migrations
+
 $table->string('name', 50);
 $table->text('description');
 $table->decimal('price', 5, 2);
 
 6. Configurar longitud de caracteres
+
 https://laravel.com/docs/6.x/migrations#creating-indexes
 
 -> App/Providers/AppServiceProvider.php
@@ -46,9 +49,11 @@ public function boot()
 }
 
 7. Eliminar migraciones innecesarias y correr migraciones
+
 php artisan migrate
 
 8. Editar modelo
+
 https://laravel.com/docs/6.x/eloquent#mass-assignment
 
 protected $fillable = [
@@ -59,7 +64,9 @@ protected $fillable = [
 public $timestamps = false;
 
 9. Crear controlador "ProductController"
+
 php artisan make:controller ProductController --resource
+
 https://laravel.com/docs/6.x/controllers#resource-controllers
 https://laravel.com/docs/6.x/eloquent#retrieving-models
 
@@ -113,8 +120,11 @@ public function destroy($id)
 }
 
 10. Crear rutas
+
 Route::resource('/productos', 'ProductController');
+
 php artisan route:list
+
 https://laravel.com/docs/6.x/routing#required-parameters
 https://laravel.com/docs/6.x/controllers#restful-nested-resources
 
