@@ -12,7 +12,8 @@ Genera la clave unica para la aplicación
 
 ## Si vas a empezar el proyecto desde 0
 
-```1. Inicializar proyecto Laravel
+```
+1. Inicializar proyecto Laravel
 
 composer create-project --prefer-dist laravel/laravel aplicativo
 https://laravel.com/docs/6.x/installation
@@ -206,7 +207,7 @@ https://laravel.com/docs/6.x/controllers#restful-nested-resources
         <a href="{{url('/productos')}}">Cancelar</a>
     </form>
 @endsection
-
+´´´
 -> Products/edit
 
 @extends('index')
