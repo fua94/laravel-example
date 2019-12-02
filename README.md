@@ -13,16 +13,18 @@ Genera la clave unica para la aplicación
 ## Si vas a empezar el proyecto desde 0
 
 1. Inicializar proyecto Laravel
-composer create-project --prefer-dist laravel/laravel aplicativo
-https://laravel.com/docs/6.x/installation
+
+    composer create-project --prefer-dist laravel/laravel aplicativo
+    https://laravel.com/docs/6.x/installation
 
 2. Crear una base de datos "products"
 
 3. Configurar ambiente .env
 
 4. Crear modelo y migración "Producto"
-php artisan make:model Product -m
-https://laravel.com/docs/6.x/eloquent
+
+    php artisan make:model Product -m
+    https://laravel.com/docs/6.x/eloquent
 
 5. Editar migración
 https://laravel.com/docs/6.x/migrations
